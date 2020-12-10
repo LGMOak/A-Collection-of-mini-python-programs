@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LukimWeather</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- weather icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <!-- navbar -->
+        <nav class="navbar">
+          <a class="navbar-brand" href="#">
+            <i class="wi wi-day-lightning"></i>
+            <strong>Lukim</strong>Weather
+            <i class="wi wi-day-lightning"></i>
+          </a>
+          <span id="date" class="lead"></span>
+        </nav>
+        <!-- weather section  -->
+        <div class="container">
+                    <div class="weather-head">
+                        <h1 id="location" class="text-center display-4">{{  weather.city  }}</h1>
+                        <div class="row">                           
+                            <div id="description" class="description col-6 text-center">
+                                <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Image">
+                                <p class="desc">{{  weather.description  }}</p>            
+                            </div>
+                            <div id="temperature" class="col-6 text-center">
+                                <h4>{{  weather.temperature  }}° C</h4>                 
+                            </div>  
+                        </div>
+                        <!-- weather body header -->
+                        <div class="weather-body">                  
+                            <div class="row">
+                                <div class="humidity col text-center">
+                                    <i class="wi wi-day-sunny"></i><span> Fri</span>
+                                </div>
+                                <div class="wind col text-center">
+                                    <i class="wi wi-day-cloudy"></i><span> Sat</span>
+                                </div>
+                                <div class="visibility col text-center">
+                                    <i class="wi wi-day-cloudy-gusts"></i><span> Sun</span>
+                                </div>  
+                                <div class="wind col text-center">
+                                    <i class="wi wi-day-rain"></i><span> Mon</span>
+                                </div>
+                                <div class="wind col text-center">
+                                    <i class="wi wi-day-sunny"></i><span> Tue</span>
+                                </div>      
+                            </div>
+                            <!-- weather body data -->
+                            <div class="row">
+                                <div id="humidity" class="humidity-data col text-center">
+                                    33&#xb0;C
+                                    <p>18&#xb0;C</p>
+                                </div>
+                                <div id="wind" class="wind-data col text-center">
+                                    26&#xb0;C
+                                    <p>12&#xb0;C</p>
+                                </div>
+                                <div id="visibility" class="degree-data col text-center">
+                                    24&#xb0;C
+                                    <p>14&#xb0;C</p>
+                                </div>
+                                <div id="wind" class="wind-data col text-center">
+                                    21&#xb0;C
+                                    <p>9&#xb0;C</p>
+                                </div>
+                                <div id="wind" class="wind-data col text-center">
+                                    29&#xb0;C
+                                    <p>16&#xb0;C</p>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>                  
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

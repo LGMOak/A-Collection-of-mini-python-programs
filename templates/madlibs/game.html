@@ -1,0 +1,31 @@
+<!doctype html>
+<html land='en'>
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class=container>
+    <form method="post" action="/madlibs">      
+        <h1>Madlibs</h1>
+        <div class = "form group">
+        
+            <input type="text" class="form-control" name="name" placeholder="enter a name">
+            <br>
+            <input type="text" class="form-control" name="relative" placeholder="enter a relative">
+            <br>
+            <input type="text" class="form-control" name="colour" placeholder="enter a colour">
+            <br>
+            <input type="text" class="form-control" name="adjective" placeholder="enter an adjective">
+            <br>
+            <input type="text" class="form-control" name="mood" placeholder="enter a mood">
+            <br>
+            <input type="text" class="form-control" name="item" placeholder="enter an item">
+            <br>
+        
+        </div>    
+        <button type="submit" class="btn btn-primary">submit</button>
+    </form>    
+</body>
+</html>
+

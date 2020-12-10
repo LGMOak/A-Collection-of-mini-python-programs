@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>RPS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    
+    </head>
+    <body>
+        <form method="POST">
+            <input type="submit" value="Play">
+        </form>
+        {% if choice == 1 %}
+            <h1 style="color:black;background-color:#ffb81c;text-align:center;font-family:Georgia;font-size:32pt">ROCK</h1>
+        {% elif choice == 2 %}
+            <h1 style="color:black;background-color:#9063cd;text-align:center;font-family:Georgia;font-size:32pt">PAPER</h1>
+        {% elif choice == 3 %}
+            <h1 style="color:black;background-color:#b5bd00;text-align:center;font-family:Georgia;font-size:32pt">SCISSORS</h1>
+        {% endif %}
+    </body>
+</html>
